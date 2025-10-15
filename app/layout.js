@@ -1,3 +1,5 @@
+import './globals.css'
+
 export const metadata = {
   title: 'People Flow',
   description: 'Create an unmatched flow of people to your product',

@@ -2,7 +2,7 @@
   This file must be named page.module.css
   It contains all the original CSS converted to CSS Module classes.
 */
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 /* Global Body Styling */
 :global(body) {
   margin: 0;
