@@ -67,11 +67,11 @@ export default function Home() {
   };
 
   const checkboxData = [
-    { id: 'task1', label: "Keep your average active(for up to month) applied job count at 6/day at any given point since 31.08.2025 EU located or US remote jobs, that you consider (ones that aligns with your resume but tailor resume for each post) to be fitting" },
-    { id: 'task2', label: "Create the authentication for your app and create a separate project out of it to showcase skills." },
-    { id: 'task3', label: "Prepare for the lifestyle change that is about happen. Prepare for the interview to get hired." },
-    { id: 'task4', label: "Find someone who drafts the contract for you to sign and oficially be hired." },
-    { id: 'task5', label: "Start thinking and preparing for what's to come after being hired." },
+    { id: 'task1', label: "" },
+    { id: 'task2', label: "" },
+    { id: 'task3', label: "" },
+    { id: 'task4', label: "" },
+    { id: 'task5', label: "" },
   ];
 
   const mainGoalContent = goalTime.distance < 0 ? (
@@ -99,7 +99,7 @@ export default function Home() {
 
       <div className={styles.contentStyle}>
         <p className={styles.goalParagraph}>
-          I will take a meaningful step towards my goal of becoming a billionaire in the form of getting a job in the next <b>{mainGoalContent}</b>. A job that will take care of all my current expenses related to food, house essentials, clothing, movement and future expenses related to living by myself in a reasonably nice apartment, and a same level of a car for transportation. In this period of time I am expecting to sign and close an agreement that outlines the specifics of my job in software. In this period and the period after closing the agreement I expect to dedicate all my available time to the primary goal of becoming a billionaire.
+          
         </p>
 
         {/* CHECKBOX */}
