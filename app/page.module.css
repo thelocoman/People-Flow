@@ -4,15 +4,6 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 /* Global Body Styling */
-:global(body) {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ff5757;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 .stylish {
   position: absolute;
@@ -162,4 +153,35 @@
   width: 1000px;
   right: 200px;
   color: white;
+}
+
+
+.authentication {
+  cursor: pointer;
+  border: 15px solid white;
+  border-radius: 150px;
+  padding: 70px;
+  padding-left: 130px;
+  transition: all 0.5s ease-in-out;
+}
+
+.authentication:hover {
+  cursor: pointer;
+  border: 15px solid rgb(0, 0, 0);
+  border-radius: 150px;
+  padding: 70px;
+  padding-left: 130px;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.authentication::after {
+  content: "\00A0👉 🔐";
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.authentication:hover::after {
+  content: "\00A0 👉 🔐";
+  opacity: 1;
 }

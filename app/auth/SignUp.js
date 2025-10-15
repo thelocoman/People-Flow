@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./pagetwo.module.css";
+import styles from "./auth.module.css";
 
 function SignUpForm() {
   const [state, setState] = React.useState({ name: "", email: "", password: "" });
@@ -17,15 +17,11 @@ function SignUpForm() {
   };
 
   return (
-    <div className={styles.signUpContainer}>
+    <div className={`${styles.signUpContainer} ${styles.formContainer}`}>
       <form onSubmit={handleOnSubmit} className={styles.form}>
         <h1 className={styles.title}>Create Account</h1>
         <div className={styles.socialContainer}>
-          <a href="#" className={styles.social}><i className="fab fa-facebook-f" /></a>
-          <a href="#" className={styles.social}><i className="fab fa-google-plus-g" /></a>
-          <a href="#" className={styles.social}><i className="fab fa-linkedin-in" /></a>
         </div>
-        <span className={styles.subtitle}>or use your email for registration</span>
         <input type="text" name="name" value={state.name} onChange={handleChange} placeholder="Name" className={styles.input} />
         <input type="email" name="email" value={state.email} onChange={handleChange} placeholder="Email" className={styles.input} />
         <input type="password" name="password" value={state.password} onChange={handleChange} placeholder="Password" className={styles.input} />

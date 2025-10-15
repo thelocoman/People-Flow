@@ -1,10 +1,5 @@
-:global(body){
-    background-color: white;
-}
 
-.borderbox{
-    box-sizing: border-box;
-}
+
 
 .app {
   font-family: sans-serif;
@@ -13,7 +8,7 @@
   border-radius: 13px;
 }
 
-.containertwo {
+.container {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -24,9 +19,6 @@
   min-height: 480px;
 }
 
-.rightPanelActive {
-  transform: translateX(100%);
-}
 
 .formContainer {
   position: absolute;
@@ -41,6 +33,10 @@
   z-index: 2;
 }
 
+.container.rightPanelActive .signInContainer{
+  transform: translateX(100%);
+}
+
 .signUpContainer {
   left: 0;
   width: 50%;
@@ -48,7 +44,7 @@
   z-index: 1;
 }
 
-.rightPanelActiveSignUp {
+.container.rightPanelActive .signUpContainer {
   transform: translateX(100%);
   opacity: 1;
   z-index: 5;
@@ -77,6 +73,10 @@
   z-index: 100;
 }
 
+.container.rightPanelActive .overlayContainer {
+  transform: translateX(-100%);
+}
+
 .overlay {
   background: linear-gradient(to right, #ff4b2b, #ff416c);
   background-repeat: no-repeat;
@@ -89,6 +89,10 @@
   width: 200%;
   transform: translateX(0);
   transition: transform 0.6s ease-in-out;
+}
+
+.container.rightPanelActive .overlay {
+  transform: translateX(50%);
 }
 
 .overlayPanel {
@@ -110,20 +114,24 @@
   transform: translateX(-20%);
 }
 
+.container.rightPanelActive .overlayLeft {
+  transform: translateX(0);
+}
+
 .overlayRight {
   right: 0;
   transform: translateX(0);
 }
 
-.rightPanelActiveOverlayLeft {
-  transform: translateX(0);
-}
-
-.rightPanelActiveOverlayRight {
+.container.rightPanelActive .overlayRight {
   transform: translateX(20%);
 }
 
 .socialContainer {
+  margin: 20px 0;
+}
+
+.socialContainer a {
   margin: 20px 0;
 }
 

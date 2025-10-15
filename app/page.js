@@ -45,6 +45,7 @@ export default function Home() {
   const STEP_DATE = new Date("Oct 14, 2025 21:00:00").getTime();
 
   const router = useRouter();
+  const [loggedIn, setloggedIn] = useState(null);
 
   const [goalTime, setGoalTime] = useState(calculateTimeRemaining(GOAL_DATE));
   const [stepTimers, setStepTimers] = useState(Array(5).fill(formatStepTime(STEP_DATE)));
@@ -88,7 +89,8 @@ export default function Home() {
     </>
   );
 
-  return (
+  if (loggedIn) {
+    return (
     <>
       <div className={styles.container}>
         <div className={`${styles.circle} ${styles.c1}`}></div>
@@ -96,7 +98,7 @@ export default function Home() {
         <div className={`${styles.circle} ${styles.c3}`}></div>
       </div>
 
-      <h1 className={styles.mainTitle} onClick={() => router.push("/auth")}>
+      <h1 className={styles.mainTitle}>
         <u>Taking the next step</u>
       </h1>
 
@@ -134,4 +136,10 @@ export default function Home() {
       </div>
     </>
   );
+} 
+
+return (
+  <h1 className={styles.authentication} onClick={() => router.push("/auth")}>Please <u>Log In</u> or <u>Sign Up</u> </h1>
+)
 }
+

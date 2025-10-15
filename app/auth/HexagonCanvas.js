@@ -112,7 +112,8 @@ const HexagonCanvas = () => {
                 top: 0,
                 left: 0,
                 zIndex: -1,
-                pointerEvents: 'none' // Ensures the canvas doesn't block other elements
+                pointerEvents: 'none', // Ensures the canvas doesn't block other elements
+                backgroundColor: 'white',
             }}
         />
     );
