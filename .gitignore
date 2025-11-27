@@ -18,4 +18,4 @@ npm-debug.log*
 
 /Client/.env.local
 
-README.md
+SETUP.md
