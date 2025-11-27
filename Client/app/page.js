@@ -139,7 +139,10 @@ export default function Home() {
 } 
 
 return (
+  <>
+  <h1 className={styles.info}>This is beta version of the website. Some of the website's functionality might be disabled for security reasons!</h1>
   <h1 className={styles.authentication} onClick={() => router.push("/auth")}>Please <u>Log In</u> or <u>Sign Up</u> </h1>
+  </>
 )
 }
 

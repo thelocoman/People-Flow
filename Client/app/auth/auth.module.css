@@ -202,3 +202,36 @@
   letter-spacing: 0.5px;
   margin: 20px 0 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  border: 2px solid #ffffff;
+  font-size: x-large;
+  text-align: center;
+  background: black;
+  color: white;
+  font-weight: 100;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}

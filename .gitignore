@@ -7,3 +7,15 @@ npm-debug.log*
 .next
 
 .env.local
+
+/Client/node_modules
+
+/Client/npm-debug.log*
+
+/Client/.DS_Store
+
+/Client/.next
+
+/Client/.env.local
+
+README.md

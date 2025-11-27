@@ -23,6 +23,7 @@ export default function App() {
 
   return (
     <div className={styles.app}>
+        <h1 className={styles.info}>This is beta version of the website. Some of the website's functionality might be disabled for security reasons!</h1>
       <HexagonCanvas />
       <div className={containerClass} id="container">
         <SignUpForm />
@@ -32,9 +33,9 @@ export default function App() {
             <div
               className={`${styles.overlayPanel} ${styles.overlayLeft}`}
             >
-              <h1 className={styles.title}>Welcome Back!</h1>
+              <h1 className={styles.title}>Hello, Friend!</h1>
               <p className={styles.subtitle}>
-                To keep connected with us please login with your personal info
+                Enter your personal details and start journey with us
               </p>
               <button
                 className={`${styles.button} ${styles.ghost}`}
@@ -46,10 +47,10 @@ export default function App() {
             </div>
             <div
               className={`${styles.overlayPanel} ${styles.overlayRight}`}
-            >
-              <h1 className={styles.title}>Hello, Friend!</h1>
+            > 
+              <h1 className={styles.title}>Welcome Back!</h1>
               <p className={styles.subtitle}>
-                Enter your personal details and start journey with us
+                To keep connected with us please login with your personal info
               </p>
               <button
                 className={`${styles.button} ${styles.ghost}`}
